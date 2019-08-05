@@ -1,0 +1,14 @@
+image:
+  file: Dockerfile
+tasks:
+- command: >
+    cd examples/hello_world/ &&
+    flutter packages pub global activate webdev &&
+    flutter packages upgrade && pub get &&
+    webdev serve
+ports:
+- port: 8080
+vscode:
+  extensions:
+    - Dart-Code.flutter@3.3.0:qio58bk93KW0psHlEeHzRA==
+    - Dart-Code.dart-code@3.3.0:/exaMVSrSRxFNqSQrZjx9g==
