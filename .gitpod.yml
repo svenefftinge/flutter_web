@@ -1,8 +1,8 @@
 image:
   file: Dockerfile
+workspaceLocation: flutter_web/examples/hello_world
 tasks:
 - command: >
-    cd examples/hello_world/ &&
     flutter packages pub global activate webdev &&
     flutter packages upgrade && pub get &&
     webdev serve
